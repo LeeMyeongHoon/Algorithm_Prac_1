@@ -27,7 +27,7 @@ struct Soluter
 	int height;
 	int width;
 	int emptyCount = 0;
-	Blank data[20][20];
+	Blank str[20][20];
 
 	void Input();
 	void Solve();
@@ -64,11 +64,11 @@ void Soluter::Input()
 			std::cin >> ch;
 			if (ch == '#')
 			{
-				data[x][y] = Blank::BLOCK;
+				str[x][y] = Blank::BLOCK;
 			}
 			else
 			{
-				data[x][y] = Blank::EMPTY;
+				str[x][y] = Blank::EMPTY;
 				emptyCount++;
 			}
 		}
@@ -97,7 +97,7 @@ int Soluter::GetCount()
 	{
 		for (int x = 0; x < width; x++)
 		{
-			if (data[x][y] == Blank::EMPTY)
+			if (str[x][y] == Blank::EMPTY)
 			{
 				emptyX = x;
 				emptyY = y;
@@ -125,7 +125,7 @@ int Soluter::GetCount()
 		{
 			int x = emptyX + offset[type][posNum].x;
 			int y = emptyY + offset[type][posNum].y;
-			if (x < 0 || y < 0 || x >= width || y >= height || data[x][y] == Blank::BLOCK)
+			if (x < 0 || y < 0 || x >= width || y >= height || str[x][y] == Blank::BLOCK)
 			{
 				canPushShape = false;
 				break;
@@ -138,7 +138,7 @@ int Soluter::GetCount()
 			{
 				int x = emptyX + offset[type][posNum].x;
 				int y = emptyY + offset[type][posNum].y;
-				data[x][y] = Blank::BLOCK;
+				str[x][y] = Blank::BLOCK;
 			}
 
 			count += GetCount();
@@ -147,7 +147,7 @@ int Soluter::GetCount()
 			{
 				int x = emptyX + offset[type][posNum].x;
 				int y = emptyY + offset[type][posNum].y;
-				data[x][y] = Blank::EMPTY;
+				str[x][y] = Blank::EMPTY;
 			}
 		}
 	}

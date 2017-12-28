@@ -25,7 +25,7 @@ struct Soluter
 	};
 
 	int height;
-	int width;
+	int totalWidth;
 	int emptyCount = 0;
 	Blank str[20][20];
 
@@ -55,10 +55,10 @@ int main()
 
 void Soluter::Input()
 {
-	std::cin >> height >> width;
+	std::cin >> height >> totalWidth;
 	for (int y = 0; y < height; y++)
 	{
-		for (int x = 0; x < width; x++)
+		for (int x = 0; x < totalWidth; x++)
 		{
 			char ch;
 			std::cin >> ch;
@@ -95,7 +95,7 @@ int Soluter::GetCount()
 	bool isEmptyPosFound = false;
 	for (int y = 0; y < height; y++)
 	{
-		for (int x = 0; x < width; x++)
+		for (int x = 0; x < totalWidth; x++)
 		{
 			if (str[x][y] == Blank::EMPTY)
 			{
@@ -125,7 +125,7 @@ int Soluter::GetCount()
 		{
 			int x = emptyX + offset[type][posNum].x;
 			int y = emptyY + offset[type][posNum].y;
-			if (x < 0 || y < 0 || x >= width || y >= height || str[x][y] == Blank::BLOCK)
+			if (x < 0 || y < 0 || x >= totalWidth || y >= height || str[x][y] == Blank::BLOCK)
 			{
 				canPushShape = false;
 				break;

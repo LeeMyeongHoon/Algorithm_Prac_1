@@ -2,13 +2,13 @@
 //#define Sol3
 #ifdef Sol3
 
-int n;
+size_t n;
 bool areFriends[10][10];
 
-int countPairings(bool taken[10])
+size_t countPairings(bool taken[10])
 {
-	int firstFree = -1;
-	for (int i = 0; i < n; i++)
+	size_t firstFree = -1;
+	for (size_t i = 0; i < n; i++)
 	{
 		if (!taken[i])
 		{
@@ -22,9 +22,9 @@ int countPairings(bool taken[10])
 		return 1;
 	}
 
-	int ret = 0;
+	size_t ret = 0;
 
-	for (int pairWith = firstFree + 1; pairWith < n; pairWith++)
+	for (size_t pairWith = firstFree + 1; pairWith < n; pairWith++)
 	{
 		if (!taken[pairWith] && areFriends[firstFree][pairWith])
 		{

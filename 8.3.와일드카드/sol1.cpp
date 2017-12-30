@@ -9,7 +9,7 @@ using std::string;
 
 bool match(const string& w, const string& s)
 {
-	int pos = 0;
+	size_t pos = 0;
 	while (pos < s.size() && pos < w.size() && (w[pos] == '?' || s[pos] == w[pos]))
 	{
 		pos++;
@@ -22,7 +22,7 @@ bool match(const string& w, const string& s)
 
 	if (w[pos] == '*')
 	{
-		for (int skip = 0; pos + skip < s.size(); skip++)
+		for (size_t skip = 0; pos + skip < s.size(); skip++)
 		{
 			if (match(w.substr(pos + 1), s.substr(pos + skip)))
 			{
@@ -35,11 +35,11 @@ bool match(const string& w, const string& s)
 }
 
 // 2.µ¿Àû
-int cache[101][101];
+size_t cache[101][101];
 string W, S;
-bool matchMemoized(int w, int s)
+bool matchMemoized(size_t w, size_t s)
 {
-	int& ret = cache[w][s];
+	size_t& ret = cache[w][s];
 	if (ret != -1)
 	{
 		return ret;
@@ -57,7 +57,7 @@ bool matchMemoized(int w, int s)
 
 	if (W[w] == '*')
 	{
-		for (int skip = 0; skip + s < S.size(); skip++)
+		for (size_t skip = 0; skip + s < S.size(); skip++)
 		{
 			if (matchMemoized(w + 1, s + skip))
 			{

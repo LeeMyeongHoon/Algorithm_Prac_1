@@ -10,25 +10,25 @@
 struct Soluter
 {
 	std::string str;
-	std::vector<int> data;
-	int history[10000];
+	std::vector<size_t> data;
+	size_t history[10000];
 
 	void Input()
 	{
 		std::cin >> str;
-		for (int i = 0; i < str.size(); i++)
+		for (size_t i = 0; i < str.size(); i++)
 		{
 			char temp[2] = { str[i],'\0' };
 			data.push_back(atoi(temp));
 		}
 
-		for (int i = 0; i < str.size(); i++)
+		for (size_t i = 0; i < str.size(); i++)
 		{
 			history[i] = -1;
 		}
 	}
 
-	int GetMinDifficulty(int start)
+	size_t GetMinDifficulty(size_t start)
 	{
 		if (start == data.size())
 		{
@@ -41,9 +41,9 @@ struct Soluter
 			return cache;
 		}
 
-		int min = 35000;
+		size_t min = 35000;
 
-		for (int newSize = 3; newSize <= 5; newSize++)
+		for (size_t newSize = 3; newSize <= 5; newSize++)
 		{
 			if (start + newSize <= data.size())
 			{
@@ -59,10 +59,10 @@ struct Soluter
 		std::cout << GetMinDifficulty(0) << '\n';
 	}
 
-	bool IsAllSame(int begin, int end)
+	bool IsAllSame(size_t begin, size_t end)
 	{
-		int num = data[begin];
-		for (int i = begin + 1; i < end; i++)
+		size_t num = data[begin];
+		for (size_t i = begin + 1; i < end; i++)
 		{
 			if (num != data[i])
 			{
@@ -72,9 +72,9 @@ struct Soluter
 		return true;
 	}
 
-	bool IsSequence(int begin, int end, int offset)
+	bool IsSequence(size_t begin, size_t end, size_t offset)
 	{
-		for (int i = begin; i < end - 1; i++)
+		for (size_t i = begin; i < end - 1; i++)
 		{
 			if (data[i + 1] != data[i] + offset)
 			{
@@ -84,13 +84,13 @@ struct Soluter
 		return true;
 	}
 
-	bool IsTwoNumber(int begin, int end)
+	bool IsTwoNumber(size_t begin, size_t end)
 	{
-		int num0 = data[begin];
-		int num1 = data[begin + 1];
+		size_t num0 = data[begin];
+		size_t num1 = data[begin + 1];
 
 		bool switch0 = true;
-		for (int i = begin + 2; i < end; i++)
+		for (size_t i = begin + 2; i < end; i++)
 		{
 			if (switch0)
 			{
@@ -112,9 +112,9 @@ struct Soluter
 		return true;
 	}
 
-	int GetDifficulty(int begin, int end)
+	size_t GetDifficulty(size_t begin, size_t end)
 	{
-		int offset = data[begin + 1] - data[begin];
+		size_t offset = data[begin + 1] - data[begin];
 
 		bool isArithSequnce = false;
 
@@ -149,9 +149,9 @@ struct Soluter
 	}
 };
 
-int main()
+size_t main()
 {
-	int count;
+	size_t count;
 	std::cin >> count;
 	std::vector<Soluter> soluters(count);
 

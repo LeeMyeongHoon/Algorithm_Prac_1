@@ -6,9 +6,9 @@
 
 struct Soluter
 {
-	using City = int;
+	using City = size_t;
 
-	int cityCount;
+	size_t cityCount;
 	bool isVisited[10] = { false };
 	size_t cost[10][10];
 	size_t minTotalCost = std::numeric_limits<size_t>::max();
@@ -18,16 +18,16 @@ struct Soluter
 	{
 		std::cin >> cityCount;
 
-		for (int i = 0; i < cityCount; i++)
+		for (size_t i = 0; i < cityCount; i++)
 		{
-			for (int j = 0; j < cityCount; j++)
+			for (size_t j = 0; j < cityCount; j++)
 			{
 				std::cin >> cost[i][j];
 			}
 		}
 	}
 
-	void SetMinTotalCost(City beginCity, City curCity, int curTotalCost, int visitCount)
+	void SetMinTotalCost(City beginCity, City curCity, size_t curTotalCost, size_t visitCount)
 	{
 		if (curTotalCost >= minTotalCost)
 		{
@@ -62,7 +62,7 @@ struct Soluter
 	}
 };
 
-int main()
+size_t main()
 {
 	Soluter soluter;
 

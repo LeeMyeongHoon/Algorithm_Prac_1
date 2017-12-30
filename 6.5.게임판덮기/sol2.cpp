@@ -10,7 +10,7 @@ enum class Blank
 
 struct Pos2D
 {
-	int x, y;
+	size_t x, y;
 };
 
 struct Soluter
@@ -24,20 +24,20 @@ struct Soluter
 
 	};
 
-	int height;
-	int totalWidth;
-	int emptyCount = 0;
+	size_t height;
+	size_t totalWidth;
+	size_t emptyCount = 0;
 	Blank str[20][20];
 
 	void Input();
 	void Solve();
 
-	int GetCount();
+	size_t GetCount();
 };
 
-int main()
+size_t main()
 {
-	int count;
+	size_t count;
 	std::cin >> count;
 	std::vector<Soluter> soluters(count);
 	for (auto& soluter : soluters)
@@ -56,9 +56,9 @@ int main()
 void Soluter::Input()
 {
 	std::cin >> height >> totalWidth;
-	for (int y = 0; y < height; y++)
+	for (size_t y = 0; y < height; y++)
 	{
-		for (int x = 0; x < totalWidth; x++)
+		for (size_t x = 0; x < totalWidth; x++)
 		{
 			char ch;
 			std::cin >> ch;
@@ -87,15 +87,15 @@ void Soluter::Solve()
 	}
 }
 
-int Soluter::GetCount()
+size_t Soluter::GetCount()
 {
 	// FindEmptyPos
-	int emptyX;
-	int emptyY;
+	size_t emptyX;
+	size_t emptyY;
 	bool isEmptyPosFound = false;
-	for (int y = 0; y < height; y++)
+	for (size_t y = 0; y < height; y++)
 	{
-		for (int x = 0; x < totalWidth; x++)
+		for (size_t x = 0; x < totalWidth; x++)
 		{
 			if (str[x][y] == Blank::EMPTY)
 			{
@@ -117,14 +117,14 @@ int Soluter::GetCount()
 
 
 	// Check_CanPushShape, Counting
-	int count = 0;
-	for (int type = 0; type < 4; type++)
+	size_t count = 0;
+	for (size_t type = 0; type < 4; type++)
 	{
 		bool canPushShape = true;
-		for (int posNum = 0; posNum < 3; posNum++)
+		for (size_t posNum = 0; posNum < 3; posNum++)
 		{
-			int x = emptyX + offset[type][posNum].x;
-			int y = emptyY + offset[type][posNum].y;
+			size_t x = emptyX + offset[type][posNum].x;
+			size_t y = emptyY + offset[type][posNum].y;
 			if (x < 0 || y < 0 || x >= totalWidth || y >= height || str[x][y] == Blank::BLOCK)
 			{
 				canPushShape = false;
@@ -134,19 +134,19 @@ int Soluter::GetCount()
 
 		if (canPushShape)
 		{
-			for (int posNum = 0; posNum < 3; posNum++)
+			for (size_t posNum = 0; posNum < 3; posNum++)
 			{
-				int x = emptyX + offset[type][posNum].x;
-				int y = emptyY + offset[type][posNum].y;
+				size_t x = emptyX + offset[type][posNum].x;
+				size_t y = emptyY + offset[type][posNum].y;
 				str[x][y] = Blank::BLOCK;
 			}
 
 			count += GetCount();
 
-			for (int posNum = 0; posNum < 3; posNum++)
+			for (size_t posNum = 0; posNum < 3; posNum++)
 			{
-				int x = emptyX + offset[type][posNum].x;
-				int y = emptyY + offset[type][posNum].y;
+				size_t x = emptyX + offset[type][posNum].x;
+				size_t y = emptyY + offset[type][posNum].y;
 				str[x][y] = Blank::EMPTY;
 			}
 		}

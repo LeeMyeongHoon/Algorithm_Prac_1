@@ -8,16 +8,16 @@
 
 struct Soluter
 {
-	int size;
-	int str[100][100];
-	int history[100][100];
+	size_t size;
+	size_t str[100][100];
+	size_t history[100][100];
 
 	void Input()
 	{
 		std::cin >> size;
-		for (int i = 0; i < size; i++)
+		for (size_t i = 0; i < size; i++)
 		{
-			for (int j = 0; j < i + 1; j++)
+			for (size_t j = 0; j < i + 1; j++)
 			{
 				std::cin >> str[i][j];
 			}
@@ -28,9 +28,9 @@ struct Soluter
 	{
 		//FindMax();
 		history[0][0] = str[0][0];
-		for (int i = 1; i < size; i++)
+		for (size_t i = 1; i < size; i++)
 		{
-			for (int j = 0; j < i + 1; j++)
+			for (size_t j = 0; j < i + 1; j++)
 			{
 				if (j == 0)
 				{
@@ -44,8 +44,8 @@ struct Soluter
 			}
 		}
 
-		int max = -1;
-		for (int j = 0; j < size; j++)
+		size_t max = -1;
+		for (size_t j = 0; j < size; j++)
 		{
 			if (max < history[size - 1][j])
 			{
@@ -57,9 +57,9 @@ struct Soluter
 	}
 };
 
-int main()
+size_t main()
 {
-	int count;
+	size_t count;
 	std::cin >> count;
 
 	std::vector<Soluter> soluters(count);

@@ -9,16 +9,16 @@
 
 struct Soluter
 {
-	int size;
-	int data[100][100];
-	int history[100][100];
+	size_t size;
+	size_t data[100][100];
+	size_t history[100][100];
 
 	void Input()
 	{
 		std::cin >> size;
-		for (int i = 0; i < size; i++)
+		for (size_t i = 0; i < size; i++)
 		{
-			for (int j = 0; j < i + 1; j++)
+			for (size_t j = 0; j < i + 1; j++)
 			{
 				std::cin >> data[i][j];
 				history[i][j] = -1;
@@ -26,7 +26,7 @@ struct Soluter
 		}
 	}
 
-	int GetSum(int i, int j)
+	size_t GetSum(size_t i, size_t j)
 	{
 		if (j == size - 1)
 		{
@@ -49,9 +49,9 @@ struct Soluter
 	}
 };
 
-int main()
+size_t main()
 {
-	int count;
+	size_t count;
 	std::cin >> count;
 
 	std::vector<Soluter> soluters(count);

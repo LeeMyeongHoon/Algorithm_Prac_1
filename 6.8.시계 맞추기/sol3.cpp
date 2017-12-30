@@ -7,15 +7,15 @@
 
 struct Soluter
 {
-	using Time = int;
-	using Clock = int;
-	using Switch = int;
+	using Time = size_t;
+	using Clock = size_t;
+	using Switch = size_t;
 
-	static const int CLOCK_COUNT = 16;
-	static const int SWITCH_COUNT = 10;
+	static const size_t CLOCK_COUNT = 16;
+	static const size_t SWITCH_COUNT = 10;
 
 	Time times[CLOCK_COUNT];
-	int minTotalPushCount = std::numeric_limits<int>::max();
+	size_t minTotalPushCount = std::numeric_limits<size_t>::max();
 
 	std::vector<Clock> connectedClocks[SWITCH_COUNT] =
 	{
@@ -39,7 +39,7 @@ struct Soluter
 		}
 	}
 
-	void SetMinTotalPushCount(int switchPushCount, Switch swtch, int curTotalPushCount)
+	void SetMinTotalPushCount(size_t switchPushCount, Switch swtch, size_t curTotalPushCount)
 	{
 		bool isAllSet = true;
 		for (auto& time : times)
@@ -97,7 +97,7 @@ struct Soluter
 	{
 		SetMinTotalPushCount(0, 0, 0);
 
-		if (minTotalPushCount == std::numeric_limits<int>::max())
+		if (minTotalPushCount == std::numeric_limits<size_t>::max())
 		{
 			std::cout << -1 << '\n';
 		}
@@ -108,9 +108,9 @@ struct Soluter
 	}
 };
 
-int main()
+size_t main()
 {
-	int count;
+	size_t count;
 	std::cin >> count;
 	std::vector<Soluter> soluters(count);
 	for (auto& soluter : soluters)

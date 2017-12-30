@@ -4,14 +4,14 @@
 
 struct Soluter
 {
-	int size;
-	int str[500];
-	int history[500];
+	size_t size;
+	size_t str[500];
+	size_t history[500];
 
 	void Input()
 	{
 		std::cin >> size;
-		for (int i = 0; i < size; i++)
+		for (size_t i = 0; i < size; i++)
 		{
 			std::cin >> str[i];
 			history[i] = -1;
@@ -19,7 +19,7 @@ struct Soluter
 	}
 
 
-	int GetMaxLength(int start)
+	size_t GetMaxLength(size_t start)
 	{
 		if (start == size - 1)
 		{
@@ -33,8 +33,8 @@ struct Soluter
 			return cache;
 		}
 
-		int maxLength = 1;
-		for (int next = start + 1; next < size; next++)
+		size_t maxLength = 1;
+		for (size_t next = start + 1; next < size; next++)
 		{
 			if (str[start] < str[next])
 			{
@@ -51,10 +51,10 @@ struct Soluter
 
 	void Solve()
 	{
-		int max = -1;
-		for (int start = 0; start < size; start++)
+		size_t max = -1;
+		for (size_t start = 0; start < size; start++)
 		{
-			int newMaxLength = GetMaxLength(start);
+			size_t newMaxLength = GetMaxLength(start);
 			if (max < newMaxLength)
 			{
 				max = newMaxLength;
@@ -65,9 +65,9 @@ struct Soluter
 	}
 };
 
-int main()
+size_t main()
 {
-	int count;
+	size_t count;
 	std::cin >> count;
 	std::vector<Soluter> soluters(count);
 

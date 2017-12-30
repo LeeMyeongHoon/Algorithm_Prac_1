@@ -7,8 +7,8 @@
 
 struct Soluter
 {
-	int studentCount = 0;
-	int friendPairCount = 0;
+	size_t studentCount = 0;
+	size_t friendPairCount = 0;
 	bool areFriends[10][10] = { {false} };
 
 	bool isPaired[10] = { false };
@@ -16,9 +16,9 @@ struct Soluter
 	void Input()
 	{
 		std::cin >> studentCount >> friendPairCount;
-		for (int i = 0; i < friendPairCount; i++)
+		for (size_t i = 0; i < friendPairCount; i++)
 		{
-			int stu1, stu2;
+			size_t stu1, stu2;
 			std::cin >> stu1 >> stu2;
 			areFriends[stu1][stu2] = true;
 			areFriends[stu2][stu1] = true;
@@ -26,10 +26,10 @@ struct Soluter
 		}
 	}
 
-	int GetPicnicPairingCount()
+	size_t GetPicnicPairingCount()
 	{
-		int freeStudent = -1;
-		for (int stu = 0; stu < studentCount; stu++)
+		size_t freeStudent = -1;
+		for (size_t stu = 0; stu < studentCount; stu++)
 		{
 			if (!isPaired[stu])
 			{
@@ -43,8 +43,8 @@ struct Soluter
 			return 1;
 		}
 
-		int picnicPairingCount = 0;
-		for (int partner = freeStudent + 1; partner < studentCount; partner++)
+		size_t picnicPairingCount = 0;
+		for (size_t partner = freeStudent + 1; partner < studentCount; partner++)
 		{
 			if (!isPaired[partner] && areFriends[freeStudent][partner])
 			{
@@ -65,9 +65,9 @@ struct Soluter
 	}
 };
 
-int main()
+size_t main()
 {
-	int count;
+	size_t count;
 	std::cin >> count;
 	std::vector<Soluter> soluters(count);
 

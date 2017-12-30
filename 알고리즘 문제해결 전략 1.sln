@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8_14.폴리오미노", "8_1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8_16.두니발 박사의 탈옥", "8_16.두니발 박사의 탈옥\8_16.두니발 박사의 탈옥.vcxproj", "{5AE98FBD-0663-4D2B-B018-4FDD5ABB27DE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP]피보나치 함수", "[DP]피보나치 함수\[DP]피보나치 함수.vcxproj", "{A85EE9BF-4670-4264-9E00-874216039452}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -305,6 +307,16 @@ Global
 		{5AE98FBD-0663-4D2B-B018-4FDD5ABB27DE}.Release|x64.Build.0 = Release|x64
 		{5AE98FBD-0663-4D2B-B018-4FDD5ABB27DE}.Release|x86.ActiveCfg = Release|Win32
 		{5AE98FBD-0663-4D2B-B018-4FDD5ABB27DE}.Release|x86.Build.0 = Release|Win32
+		{A85EE9BF-4670-4264-9E00-874216039452}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A85EE9BF-4670-4264-9E00-874216039452}.Debug|x64.ActiveCfg = Debug|x64
+		{A85EE9BF-4670-4264-9E00-874216039452}.Debug|x64.Build.0 = Debug|x64
+		{A85EE9BF-4670-4264-9E00-874216039452}.Debug|x86.ActiveCfg = Debug|Win32
+		{A85EE9BF-4670-4264-9E00-874216039452}.Debug|x86.Build.0 = Debug|Win32
+		{A85EE9BF-4670-4264-9E00-874216039452}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A85EE9BF-4670-4264-9E00-874216039452}.Release|x64.ActiveCfg = Release|x64
+		{A85EE9BF-4670-4264-9E00-874216039452}.Release|x64.Build.0 = Release|x64
+		{A85EE9BF-4670-4264-9E00-874216039452}.Release|x86.ActiveCfg = Release|Win32
+		{A85EE9BF-4670-4264-9E00-874216039452}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

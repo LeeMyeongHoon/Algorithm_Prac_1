@@ -9,15 +9,15 @@
 double	history[1000][2003];
 struct Soluter
 {
-	int totalHeight;
-	int totalDay;
+	size_t totalHeight;
+	size_t totalDay;
 
 	void Input()
 	{
 		std::cin >> totalHeight >> totalDay;
 	}
 
-	double GetClimbDay(int curDay, int curHeight)
+	double GetClimbDay(size_t curDay, size_t curHeight)
 	{
 
 		if (curDay == totalDay)
@@ -55,9 +55,9 @@ struct Soluter
 	}
 };
 
-int main()
+size_t main()
 {
-	int count;
+	size_t count;
 	std::cin >> count;
 	std::vector<Soluter> soluters(count);
 

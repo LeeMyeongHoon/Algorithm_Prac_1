@@ -18,8 +18,5 @@
     <ClCompile Include="sol.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\[완전탐색]욕심쟁이 판다\sol.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

@@ -73,7 +73,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9_17.숫자 게임", "9_17.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9_21.삼각형 위의 최대 경로", "9_21.삼각형 위의 최대 경로\9_21.삼각형 위의 최대 경로.vcxproj", "{B940F0DC-2950-4B84-957F-287CC3B0D55C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9_22.회전초바", "9_22.회전초바\9_22.회전초바.vcxproj", "{2C05DE24-8AC0-47EE-AB06-ECACE5750E03}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9_22.회전초밥", "9_22.회전초바\9_22.회전초바.vcxproj", "{2C05DE24-8AC0-47EE-AB06-ECACE5750E03}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9_24.지니어스", "9_24.지니어스\9_24.지니어스.vcxproj", "{D3BDA550-C617-4980-B1DE-647108CF5E92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -448,6 +450,16 @@ Global
 		{2C05DE24-8AC0-47EE-AB06-ECACE5750E03}.Release|x64.Build.0 = Release|x64
 		{2C05DE24-8AC0-47EE-AB06-ECACE5750E03}.Release|x86.ActiveCfg = Release|Win32
 		{2C05DE24-8AC0-47EE-AB06-ECACE5750E03}.Release|x86.Build.0 = Release|Win32
+		{D3BDA550-C617-4980-B1DE-647108CF5E92}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{D3BDA550-C617-4980-B1DE-647108CF5E92}.Debug|x64.ActiveCfg = Debug|x64
+		{D3BDA550-C617-4980-B1DE-647108CF5E92}.Debug|x64.Build.0 = Debug|x64
+		{D3BDA550-C617-4980-B1DE-647108CF5E92}.Debug|x86.ActiveCfg = Debug|Win32
+		{D3BDA550-C617-4980-B1DE-647108CF5E92}.Debug|x86.Build.0 = Debug|Win32
+		{D3BDA550-C617-4980-B1DE-647108CF5E92}.Release|Any CPU.ActiveCfg = Release|Win32
+		{D3BDA550-C617-4980-B1DE-647108CF5E92}.Release|x64.ActiveCfg = Release|x64
+		{D3BDA550-C617-4980-B1DE-647108CF5E92}.Release|x64.Build.0 = Release|x64
+		{D3BDA550-C617-4980-B1DE-647108CF5E92}.Release|x86.ActiveCfg = Release|Win32
+		{D3BDA550-C617-4980-B1DE-647108CF5E92}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

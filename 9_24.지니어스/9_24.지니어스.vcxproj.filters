@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="9_24.지니어스.cpp">
+    <ClCompile Include="sol.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sol2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

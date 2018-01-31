@@ -73,6 +73,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a24.1.구간트리", "a24.1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a21.2.요새_", "a21.2.요새_\a21.2.요새_.vcxproj", "{2F6F5E53-A2FA-43BC-BD60-8151B2584EAD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "24.3.등산로", "24.3.등산로\24.3.등산로.vcxproj", "{DE9CDB27-5497-4774-B2CD-DFA45460C40B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -436,6 +438,16 @@ Global
 		{2F6F5E53-A2FA-43BC-BD60-8151B2584EAD}.Release|x64.Build.0 = Release|x64
 		{2F6F5E53-A2FA-43BC-BD60-8151B2584EAD}.Release|x86.ActiveCfg = Release|Win32
 		{2F6F5E53-A2FA-43BC-BD60-8151B2584EAD}.Release|x86.Build.0 = Release|Win32
+		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Debug|x64.ActiveCfg = Debug|x64
+		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Debug|x64.Build.0 = Debug|x64
+		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Debug|x86.ActiveCfg = Debug|Win32
+		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Debug|x86.Build.0 = Debug|Win32
+		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Release|Any CPU.ActiveCfg = Release|Win32
+		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Release|x64.ActiveCfg = Release|x64
+		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Release|x64.Build.0 = Release|x64
+		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Release|x86.ActiveCfg = Release|Win32
+		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

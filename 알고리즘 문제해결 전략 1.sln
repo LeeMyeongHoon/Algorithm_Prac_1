@@ -75,6 +75,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a21.2.요새_", "a21.2.요�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "24.3.등산로", "24.3.등산로\24.3.등산로.vcxproj", "{DE9CDB27-5497-4774-B2CD-DFA45460C40B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a25.1.상호 배타적 집합", "a25.1.상호 배타적 집합\a25.1.상호 배타적 집합.vcxproj", "{F49482BC-CE87-436D-A18C-BDB09B5684FF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a24.6.펜윅트리(binary indexed tree)", "a24.6.펜윅트리(binary indexed tree)\a24.6.펜윅트리(binary indexed tree).vcxproj", "{21E54565-8620-445F-BDC4-DB0ABAED2A26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -448,6 +452,26 @@ Global
 		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Release|x64.Build.0 = Release|x64
 		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Release|x86.ActiveCfg = Release|Win32
 		{DE9CDB27-5497-4774-B2CD-DFA45460C40B}.Release|x86.Build.0 = Release|Win32
+		{F49482BC-CE87-436D-A18C-BDB09B5684FF}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{F49482BC-CE87-436D-A18C-BDB09B5684FF}.Debug|x64.ActiveCfg = Debug|x64
+		{F49482BC-CE87-436D-A18C-BDB09B5684FF}.Debug|x64.Build.0 = Debug|x64
+		{F49482BC-CE87-436D-A18C-BDB09B5684FF}.Debug|x86.ActiveCfg = Debug|Win32
+		{F49482BC-CE87-436D-A18C-BDB09B5684FF}.Debug|x86.Build.0 = Debug|Win32
+		{F49482BC-CE87-436D-A18C-BDB09B5684FF}.Release|Any CPU.ActiveCfg = Release|Win32
+		{F49482BC-CE87-436D-A18C-BDB09B5684FF}.Release|x64.ActiveCfg = Release|x64
+		{F49482BC-CE87-436D-A18C-BDB09B5684FF}.Release|x64.Build.0 = Release|x64
+		{F49482BC-CE87-436D-A18C-BDB09B5684FF}.Release|x86.ActiveCfg = Release|Win32
+		{F49482BC-CE87-436D-A18C-BDB09B5684FF}.Release|x86.Build.0 = Release|Win32
+		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Debug|x64.ActiveCfg = Debug|x64
+		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Debug|x64.Build.0 = Debug|x64
+		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Debug|x86.ActiveCfg = Debug|Win32
+		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Debug|x86.Build.0 = Debug|Win32
+		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Release|Any CPU.ActiveCfg = Release|Win32
+		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Release|x64.ActiveCfg = Release|x64
+		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Release|x64.Build.0 = Release|x64
+		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Release|x86.ActiveCfg = Release|Win32
+		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

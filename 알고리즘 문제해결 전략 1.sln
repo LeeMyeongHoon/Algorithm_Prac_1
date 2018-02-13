@@ -73,11 +73,15 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a24.1.구간트리", "a24.1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a21.2.요새_", "a21.2.요새_\a21.2.요새_.vcxproj", "{2F6F5E53-A2FA-43BC-BD60-8151B2584EAD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "24.3.등산로", "24.3.등산로\24.3.등산로.vcxproj", "{DE9CDB27-5497-4774-B2CD-DFA45460C40B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a24.3.등산로", "24.3.등산로\24.3.등산로.vcxproj", "{DE9CDB27-5497-4774-B2CD-DFA45460C40B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a25.1.상호 배타적 집합", "a25.1.상호 배타적 집합\a25.1.상호 배타적 집합.vcxproj", "{F49482BC-CE87-436D-A18C-BDB09B5684FF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a24.6.펜윅트리(binary indexed tree)", "a24.6.펜윅트리(binary indexed tree)\a24.6.펜윅트리(binary indexed tree).vcxproj", "{21E54565-8620-445F-BDC4-DB0ABAED2A26}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a28.2.고대어 사전", "a28.2.고대어 사전\a28.2.고대어 사전.vcxproj", "{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a30.2.다익스트라 알고리즘", "a30.2.다익스트라 알고리즘\a30.2.다익스트라 알고리즘.vcxproj", "{0DDD625F-E431-4019-AACE-0CDCE905CC2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -472,6 +476,26 @@ Global
 		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Release|x64.Build.0 = Release|x64
 		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Release|x86.ActiveCfg = Release|Win32
 		{21E54565-8620-445F-BDC4-DB0ABAED2A26}.Release|x86.Build.0 = Release|Win32
+		{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}.Debug|x64.ActiveCfg = Debug|x64
+		{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}.Debug|x64.Build.0 = Debug|x64
+		{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}.Debug|x86.ActiveCfg = Debug|Win32
+		{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}.Debug|x86.Build.0 = Debug|Win32
+		{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}.Release|x64.ActiveCfg = Release|x64
+		{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}.Release|x64.Build.0 = Release|x64
+		{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}.Release|x86.ActiveCfg = Release|Win32
+		{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}.Release|x86.Build.0 = Release|Win32
+		{0DDD625F-E431-4019-AACE-0CDCE905CC2A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{0DDD625F-E431-4019-AACE-0CDCE905CC2A}.Debug|x64.ActiveCfg = Debug|x64
+		{0DDD625F-E431-4019-AACE-0CDCE905CC2A}.Debug|x64.Build.0 = Debug|x64
+		{0DDD625F-E431-4019-AACE-0CDCE905CC2A}.Debug|x86.ActiveCfg = Debug|Win32
+		{0DDD625F-E431-4019-AACE-0CDCE905CC2A}.Debug|x86.Build.0 = Debug|Win32
+		{0DDD625F-E431-4019-AACE-0CDCE905CC2A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{0DDD625F-E431-4019-AACE-0CDCE905CC2A}.Release|x64.ActiveCfg = Release|x64
+		{0DDD625F-E431-4019-AACE-0CDCE905CC2A}.Release|x64.Build.0 = Release|x64
+		{0DDD625F-E431-4019-AACE-0CDCE905CC2A}.Release|x86.ActiveCfg = Release|Win32
+		{0DDD625F-E431-4019-AACE-0CDCE905CC2A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

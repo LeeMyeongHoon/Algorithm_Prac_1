@@ -20,11 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{DE9CDB27-5497-4774-B2CD-DFA45460C40B}</ProjectGuid>
+    <ProjectGuid>{6FF552D4-9BB3-4082-B03D-4FA9B4AADF76}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My243등산로</RootNamespace>
+    <RootNamespace>a282고대어사전</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
-    <ProjectName>a24.3.등산로</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -144,7 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="24.3.등산로.cpp" />
+    <ClCompile Include="sol.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
